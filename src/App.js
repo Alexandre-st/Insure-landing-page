@@ -1,11 +1,20 @@
 // == Import npm
 import React from 'react';
+import Banner from './components/Banner';
+import Footer from './components/Footer';
+import Main from './components/Main';
+import Navbar from './components/Navbar';
+import Welcome from './components/Welcome';
 
 const App = () => {
   return ( 
-    <div>
-      <h1>INSURE landing Page</h1>
-    </div>
+    <>
+    <Navbar />
+    <Welcome />
+    <Main />
+    <Banner />
+    <Footer />
+    </>
    );
 }
  

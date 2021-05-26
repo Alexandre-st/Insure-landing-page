@@ -4,6 +4,7 @@ import ReactDOM from 'react-dom';
 
 // == Import local
 import App from './App';
+import './styles/index.scss';
 
 
 ReactDOM.render(
