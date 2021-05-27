@@ -1,0 +1,19 @@
+// == Mobile styles
+#banner {
+  background-color: $dark-violet;
+  text-align: center;
+  margin: 80px 25px auto;
+  padding: 60px 0;
+
+  h2 {
+    font-size: 2.5em;
+    color: $very-light-gray;
+  }
+
+  button {
+    color: $very-light-gray;
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+}

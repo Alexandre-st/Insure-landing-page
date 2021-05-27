@@ -3,7 +3,7 @@ import React from 'react';
 
 const Banner = () => {
   return ( 
-    <section id="Banner">
+    <section id="banner">
 
       <h2>Find out more about how we work</h2>
       
