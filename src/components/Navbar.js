@@ -21,7 +21,9 @@ const Navbar = () => {
 
   return ( 
     <nav className="navbar grid">
-      <a className="navbar-logo" href="#"><img src={logo} alt="Logo Insure" /></a>
+      <a href="#" className="logo">
+        <img src={logo} alt="Logo Insure" />
+      </a>
 
       <ul className="navbar-menu">
         {/* <li><a href="#">How we work</a></li>

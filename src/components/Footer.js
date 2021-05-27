@@ -2,6 +2,7 @@
 import React from 'react';
 
 // == Import local
+import logo from '../assets/img/logo.svg';
 import iconFacebook from '../assets/img/icon-facebook.svg';
 import iconTwitter from '../assets/img/icon-twitter.svg';
 import iconPinterest from '../assets/img/icon-pinterest.svg';
@@ -9,10 +10,12 @@ import iconInstagram from '../assets/img/icon-instagram.svg';
 
 const Footer = () => {
   return ( 
-    <footer className="grid">
+    <footer id="footer" className="grid">
       <div className="footer">
 
-        <h2>INSURE</h2>
+        <a href="#" className="logo">
+          <img src={logo} alt="Logo INSURE" className="logo" />
+        </a>
 
         <ul className="footer-social">
           <li><img src={iconFacebook} alt="Icon de facebook" /></li>

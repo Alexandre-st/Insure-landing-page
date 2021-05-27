@@ -2,15 +2,15 @@
 .navbar {
   margin: 10px 20px;
 
-  &-logo {
-    align-self: center;
-    grid-column: 1/2;
-    width: 6em;
-  }
-
   &-menu {
     display: none;
   }
+}
+
+.logo {
+  align-self: center;
+  grid-column: 1/2;
+  width: 6em;
 }
 
 // Burger button
