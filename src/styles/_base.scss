@@ -1,0 +1,47 @@
+// == VARIABLES
+
+// Different sizes
+$little-tablets: 620px;
+$larger-tablets: 960px;
+$desktop-styles: 1200px;
+
+// Color
+// = primary color
+$dark-violet: hsl(256, 26%, 20%);
+$grayish-blue: hsl(216, 30%, 68%);
+
+// = neutral color
+$very-dark-violet: hsl(270, 9%, 17%);
+$very-light-gray: hsl(0, 0%, 98%);
+$dark-grayish-violet: hsl(273, 4%, 51%);
+
+// Fonts
+// = heading
+// font-family: 'DM Serif Display', serif;
+// = body
+// font-family: 'Karla', sans-serif;
+
+// == BASIC STYLES
+body {
+  font-size: 16px;
+  font-family: "Karla", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: "DM Serif Display", serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+}
+
+.button {
+  border: 1px solid $very-light-gray;
+  padding: 10px 30px;
+  font-size: 0.9em;
+}
+// == MEDIA QUERIES

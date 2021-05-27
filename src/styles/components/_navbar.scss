@@ -1,0 +1,21 @@
+// == Mobile styles
+.navbar {
+  margin: 10px 20px;
+
+  &-logo {
+    align-self: center;
+    grid-column: 1/2;
+    width: 6em;
+  }
+
+  &-menu {
+    display: none;
+  }
+}
+
+// Burger button
+.menuIcon {
+  display: flex;
+  grid-column: 9;
+  align-self: center;
+}
