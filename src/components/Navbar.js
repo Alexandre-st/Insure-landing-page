@@ -26,6 +26,13 @@ const Navbar = () => {
         <img src={logo} alt="Logo Insure" />
       </a>
 
+      <ul className="navbar-link">
+        <li><a href="#"></a>How we work</li>
+        <li><a href="#"></a>Blog</li>
+        <li><a href="#"></a>Account</li>
+        <li><a href="#"></a>View Plans</li>
+      </ul>
+
         {/* Navbar menu */}
         <div className="menuIcon" onClick={Toggle}>
           {!menu && 

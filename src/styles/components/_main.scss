@@ -41,3 +41,13 @@
     margin: 0 25px auto;
   }
 }
+
+// == MEDIA QUERIES
+// Small tablet styles => 620px
+@media screen and (min-width: $little-tablets) {
+  #main {
+    .svg {
+      margin-bottom: -300px;
+    }
+  }
+}

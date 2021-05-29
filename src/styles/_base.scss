@@ -15,12 +15,6 @@ $very-dark-violet: hsl(270, 9%, 17%);
 $very-light-gray: hsl(0, 0%, 98%);
 $dark-grayish-violet: hsl(273, 4%, 51%);
 
-// Fonts
-// = heading
-// font-family: 'DM Serif Display', serif;
-// = body
-// font-family: 'Karla', sans-serif;
-
 // == BASIC STYLES
 body {
   font-size: 16px;
@@ -46,3 +40,19 @@ h4 {
   font-size: 0.9em;
 }
 // == MEDIA QUERIES
+// Small tablet styles => 620px
+@media screen and (min-width: $little-tablets) {
+  .button {
+    padding: 15px 40px;
+    font-size: 1em;
+  }
+}
+
+// Large tablets & laptop styles => 960px
+@media screen and (min-width: $larger-tablets) {
+  body {
+    font-size: 18px;
+    // max-width: 1440px;
+    // margin: 0 auto;
+  }
+}

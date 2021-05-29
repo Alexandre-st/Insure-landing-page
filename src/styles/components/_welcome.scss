@@ -3,11 +3,6 @@
   overflow-x: hidden;
   background-color: $dark-violet;
   color: $very-light-gray;
-
-  // span {
-  //   position: relative;
-  //   width: 50%;
-  // }
 }
 .welcome {
   grid-column: 1/9;
@@ -38,5 +33,18 @@
     &-button {
       margin: 0 auto;
     }
+  }
+}
+
+// == MEDIA QUERIES
+// Small tablet styles => 620px
+@media screen and (min-width: $little-tablets) {
+  .welcome-text {
+    padding-bottom: 120px;
+    margin: -170px 26px auto;
+  }
+  &-title {
+    font-size: 3.5em;
+    margin-bottom: 45px;
   }
 }
