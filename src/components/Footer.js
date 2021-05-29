@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/anchor-is-valid */
 // == Import npm
 import React from 'react';
 
@@ -33,6 +34,7 @@ const Footer = () => {
             <li>reviews</li>
           </ul>
         </div>
+
         <div className="footer-link">
           <h4>HELP ME</h4>
           <ul>
@@ -42,6 +44,7 @@ const Footer = () => {
             <li>cookies</li>
           </ul>
         </div>
+
         <div className="footer-link">
           <h4>CONTACT</h4>
           <ul>
@@ -50,6 +53,7 @@ const Footer = () => {
             <li>live chat</li>
           </ul>
         </div>
+
         <div className="footer-link">
           <h4>OTHERS</h4>
           <ul>
@@ -58,6 +62,7 @@ const Footer = () => {
             <li>licenses</li>
           </ul>
         </div>
+        
       </div>
     </footer>
   

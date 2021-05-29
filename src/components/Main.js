@@ -5,13 +5,17 @@ import React from 'react';
 import flash from '../assets/img/icon-snappy-process.svg';
 import dollar from '../assets/img/icon-affordable-prices.svg';
 import personn from '../assets/img/icon-people-first.svg';
- 
+import mobileBackground from '../assets/img/bg-pattern-intro-right-mobile.svg';
+
 
 const Main = () => {
   return ( 
     <section id="main" className="grid">
-    
-    <span></span>
+    <span className="svg">
+      <img src={mobileBackground} alt="" />
+    </span>
+
+    <span className="border"></span>
     <h2>We're different</h2>
 
     <div className="main-text">

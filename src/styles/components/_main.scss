@@ -1,12 +1,17 @@
 // == Mobile styles
 #main {
-  padding-top: 120px;
+  margin-top: -140px;
   text-align: center;
 
-  span {
-    grid-column: 3/7;
+  .svg {
+    grid-column: 6/9;
+    margin-bottom: -120px;
+  }
 
-    border: 1px solid $grayish-blue;
+  .border {
+    grid-column: 3/7;
+    margin-top: 40px;
+    border-bottom: 1px solid $grayish-blue;
   }
 
   h2 {

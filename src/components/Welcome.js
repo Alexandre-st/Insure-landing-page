@@ -3,6 +3,7 @@ import React from 'react';
 
 // == Import local 
 import IntroDesktop from '../assets/img/image-intro-desktop.jpg';
+import topBackground from '../assets/img/bg-pattern-intro-left-mobile.svg';
 
 const Welcome = () => {
   return ( 
@@ -11,6 +12,7 @@ const Welcome = () => {
       <div className="welcome">
         <img className="welcome-mobile" src={IntroDesktop} alt="Famille heureuse" />
 
+          <span><img src={topBackground} alt="" /></span>
         <div className="welcome-text">
           <h2 className="welcome-text-title">Humanizing your insurance.</h2>
           
