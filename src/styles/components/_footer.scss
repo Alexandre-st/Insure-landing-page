@@ -1,16 +1,19 @@
 // Mobile styles
 #footer {
-  background: $very-light-gray;
-  background-image: url(../../assets/img/bg-pattern-footer-mobile.svg);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  margin-top: 100px;
-  padding: 80px 0;
+  background-color: $very-light-gray;
+  padding: 6em 0 0 0;
+}
+
+.background {
+  position: absolute;
+  width: 100%;
 }
 
 .footer {
-  margin: 0 25px;
+  margin: 5em 25px;
   grid-column: 1/9;
+  z-index: 0;
+
   .logo {
     margin: 0 auto;
     width: 8em;

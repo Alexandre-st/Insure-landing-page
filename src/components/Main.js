@@ -21,7 +21,9 @@ const Main = () => {
     <div className="main-text">
       <img src={flash} alt="Icon d'un éclair" />
       <h3>Snappy Process</h3>
-      <p>Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.</p>
+      <p>
+        Our application process can be completed in minutes, not hours. Don’t get stuck filling in tedious forms.
+      </p>
     </div>
 
     <div className="main-text">

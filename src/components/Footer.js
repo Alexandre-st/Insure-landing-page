@@ -8,12 +8,16 @@ import iconFacebook from '../assets/img/icon-facebook.svg';
 import iconTwitter from '../assets/img/icon-twitter.svg';
 import iconPinterest from '../assets/img/icon-pinterest.svg';
 import iconInstagram from '../assets/img/icon-instagram.svg';
+import bgMobileFooter from '../assets/img/bg-pattern-footer-mobile.svg';
 
 const Footer = () => {
   return ( 
     <footer id="footer" className="grid">
+    <div className="background">
+        <img src={bgMobileFooter} alt="Pattern background" />      
+      </div>
       <div className="footer">
-
+      
         <a href="#" className="logo">
           <img src={logo} alt="Logo INSURE" className="logo" />
         </a>
