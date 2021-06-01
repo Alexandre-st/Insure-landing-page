@@ -4,8 +4,16 @@
   background-color: $dark-violet;
   color: $very-light-gray;
 }
+.welcome-container {
+  grid-column: 1/9;
+}
+
 .welcome-mobile {
   grid-column: 1/9;
+}
+
+.welcome-desktop {
+  display: none;
 }
 
 .welcome-pattern-left {
@@ -14,11 +22,11 @@
 }
 
 .welcome-text {
-  padding: 70px 25px 115px 25px;
+  padding: 92px 25px 115px 25px;
   margin: 0 auto;
   text-align: center;
-  grid-column: 1/9;
   z-index: 0;
+  position: relative;
 
   &-title {
     font-size: 2.9em;
@@ -36,6 +44,9 @@
     margin: 0 auto;
   }
 }
+.pattern-desktop-right {
+  display: none;
+}
 
 // == MEDIA QUERIES
 // Small tablet styles => 620px
@@ -52,34 +63,89 @@
 
 // Large tablets & laptop styles => 960px
 @media screen and (min-width: $larger-tablets) {
-  .welcome {
-    max-width: 1440px;
+  .welcome-container {
+    max-width: 1200px;
+    margin: 0 auto;
+
     display: flex;
-    // flex-direction: row-reverse;
-    margin-top: 20em;
-    padding: 0 30px;
+    justify-content: space-between;
+  }
 
-    span {
-      display: none;
+  .welcome-mobile {
+    display: none;
+  }
+
+  .welcome-text {
+    // grid-column: 1/4;
+    width: 55%;
+    margin: 10px 0;
+    text-align: left;
+
+    &::before {
+      content: "";
+      display: block;
+      height: 1px;
+      background: white;
+      width: 20%;
+      position: absolute;
+      top: 4em;
     }
 
-    &-mobile {
-      // display: none;
-      // width: 50%;
-      // grid-column: 4/7;
-      display: none;
-      // max-width: 40%;
+    &-title {
+      font-size: 2.5em;
+      width: 7em;
     }
 
-    &-text {
-      // grid-column: 2/5;
-      text-align: start;
+    &-paragraph {
+      font-size: 0.9em;
     }
 
-    &-desktop {
-      display: flex;
-      width: 100%;
-      // grid-row: 2;
+    &-button {
+      padding: 10px 30px;
+      margin: 0;
     }
+  }
+
+  .welcome-desktop {
+    display: block;
+    position: absolute;
+    top: 10em;
+    width: 38%;
+    right: 2em;
+  }
+
+  .pattern-desktop-right {
+    display: block;
+    width: 27%;
+    z-index: 1;
+  }
+}
+
+// Desktop styles => 1200px
+@media screen and (min-width: $desktop-styles) {
+  .welcome-container {
+    max-width: 1200px;
+  }
+
+  .welcome-text {
+    padding-left: 40px;
+
+    &-title {
+      font-size: 3.5em;
+    }
+
+    &-paragraph {
+      width: 91%;
+    }
+  }
+
+  .welcome-desktop {
+    width: 28em;
+    top: 8em;
+    right: 9em;
+  }
+
+  .pattern-desktop-right {
+    width: 25%;
   }
 }

@@ -59,6 +59,12 @@ nav {
 
 // Large tablets & laptop styles => 960px
 @media screen and (min-width: $larger-tablets) {
+  nav {
+    position: initial;
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+
   .menuIcon {
     display: none;
   }
@@ -85,6 +91,21 @@ nav {
         border: 1px solid $dark-violet;
         color: $dark-violet;
         padding: 10px 20px;
+      }
+    }
+  }
+}
+
+// Large tablets & laptop styles => 960px
+@media screen and (min-width: $desktop-styles) {
+  .navbar {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 40px;
+
+    &-link {
+      li {
+        margin-left: 25px;
       }
     }
   }

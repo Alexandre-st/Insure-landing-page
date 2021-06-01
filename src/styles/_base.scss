@@ -55,4 +55,12 @@ h4 {
     // max-width: 1440px;
     // margin: 0 auto;
   }
+
+  .button {
+    font-size: 0.8em;
+  }
+}
+
+// Large tablets & laptop styles => 960px
+@media screen and (min-width: $desktop-styles) {
 }

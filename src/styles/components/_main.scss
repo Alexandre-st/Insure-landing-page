@@ -20,11 +20,11 @@
   }
 }
 
-.main-text {
+.main-container {
   grid-column: 1/9;
+  text-align: center;
 
   img {
-    padding-top: 30px;
     margin: 0 auto;
     max-width: 20%;
   }
@@ -39,6 +39,14 @@
     line-height: 1.5em;
     margin: 0 25px auto;
   }
+}
+
+.main-text {
+  padding: 30px 0;
+}
+
+.pattern-desktop-left {
+  display: none;
 }
 
 // == MEDIA QUERIES
@@ -73,8 +81,81 @@
 @media screen and (min-width: $larger-tablets) {
   #main {
     margin-top: 30px;
-    .svg {
+    padding: 10em 0 3em 0;
+    max-width: 1200px;
+    margin: 0 auto;
+
+    h2 {
+      text-align: left;
+      margin-left: 45px;
+      font-size: 2.5em;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 1px;
+        background: purple;
+        width: 11%;
+        position: relative;
+        top: -0.7em;
+      }
+    }
+
+    .svg,
+    .border {
       display: none;
     }
+  }
+
+  .pattern-desktop-left {
+    display: block;
+    position: absolute;
+    width: 12%;
+    top: 28em;
+  }
+
+  .main-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0px 45px auto;
+  }
+
+  .main-text {
+    text-align: left;
+    margin-right: 15px;
+    padding: 30px 0;
+
+    img {
+      margin: 0;
+      width: 25%;
+      max-width: 30%;
+    }
+
+    h3 {
+      font-size: 1.3em;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1em;
+    }
+  }
+}
+
+// == Desktop styles
+@media screen and (min-width: $desktop-styles) {
+  #main {
+    padding: 17em 0 10em 0;
+  }
+
+  .main-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 45px;
+  }
+
+  .pattern-desktop-left {
+    top: 30em;
   }
 }

@@ -1,16 +1,21 @@
 // Mobile styles
 #footer {
   background-color: $very-light-gray;
-  padding: 6em 0 0 0;
+  margin-top: 9em;
 }
 
 .background {
   position: absolute;
   width: 100%;
+
+  &-desktop {
+    display: none;
+  }
 }
 
 .footer {
-  margin: 5em 25px;
+  margin: 5em 25px auto;
+  max-width: 1200px;
   grid-column: 1/9;
   z-index: 0;
 
@@ -36,8 +41,9 @@
     letter-spacing: 2px;
 
     h4 {
-      color: $grayish-blue;
+      color: $dark-grayish-violet;
       font-size: 1em;
+      font-weight: normal;
     }
 
     li {
@@ -45,5 +51,70 @@
       color: $dark-violet;
       font-weight: bolder;
     }
+  }
+}
+
+// Large tablets & laptop styles => 960px
+@media screen and (min-width: $larger-tablets) {
+  .footer {
+    margin: 2em 50px auto;
+    // max-width: 1200px;
+
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid lightgray;
+      padding: 40px 0 30px 0;
+    }
+
+    .logo {
+      margin: 0;
+      width: 7em;
+    }
+
+    &-social {
+      border: none;
+      align-items: center;
+      padding: 0;
+    }
+
+    &-container {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-link {
+      text-align: left;
+      letter-spacing: 1px;
+      flex-grow: 1;
+
+      h4 {
+        font-size: 0.8em;
+      }
+
+      ul {
+        font-size: 0.7em;
+      }
+
+      li {
+        line-height: 2em;
+      }
+    }
+  }
+
+  .background {
+    display: none;
+  }
+
+  .desktop {
+    width: 40%;
+    position: absolute;
+  }
+}
+
+// == Desktop styles
+@media screen and (min-width: $desktop-styles) {
+  .footer {
+    margin: 2em 7em auto;
   }
 }

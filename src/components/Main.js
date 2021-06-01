@@ -6,7 +6,7 @@ import flash from '../assets/img/icon-snappy-process.svg';
 import dollar from '../assets/img/icon-affordable-prices.svg';
 import personn from '../assets/img/icon-people-first.svg';
 import mobileBackground from '../assets/img/bg-pattern-intro-right-mobile.svg';
-
+import dPatternLeft from '../assets/img/bg-pattern-intro-left-desktop.svg';
 
 const Main = () => {
   return ( 
@@ -15,9 +15,14 @@ const Main = () => {
       <img src={mobileBackground} alt="" />
     </span>
 
+    <div className="pattern-desktop-left">
+      <img src={dPatternLeft} alt="Pattern Left" />
+    </div>
+
     <span className="border"></span>
     <h2>We're different</h2>
 
+    <div className="main-container">
     <div className="main-text">
       <img src={flash} alt="Icon d'un éclair" />
       <h3>Snappy Process</h3>
@@ -37,6 +42,8 @@ const Main = () => {
       <h3>People First</h3>
       <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make sure you’re covered when you need it.</p>
     </div>
+    </div>
+    
 
     </section>
   );
