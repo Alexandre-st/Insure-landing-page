@@ -85,12 +85,22 @@ nav {
       li {
         text-transform: uppercase;
         margin-left: 20px;
+
+        &:hover {
+          color: $dark-violet;
+          cursor: pointer;
+        }
       }
 
       li:last-child {
         border: 1px solid $dark-violet;
         color: $dark-violet;
         padding: 10px 20px;
+
+        &:hover {
+          color: $very-light-gray;
+          background-color: $dark-violet;
+        }
       }
     }
   }

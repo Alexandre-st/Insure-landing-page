@@ -31,6 +31,12 @@
 
     li {
       margin: 0 10px;
+
+      &:hover {
+        cursor: pointer;
+        filter: invert(51%) sepia(10%) saturate(2253%) hue-rotate(215deg)
+          brightness(59%) contrast(100%);
+      }
     }
   }
 
@@ -47,9 +53,16 @@
     }
 
     li {
-      line-height: 1.8em;
+      line-height: 2.2em;
+      margin-bottom: 1em;
       color: $dark-violet;
       font-weight: bolder;
+
+      &:hover {
+        border-bottom: 1px solid $dark-violet;
+        width: fit-content;
+        cursor: pointer;
+      }
     }
   }
 }
@@ -101,20 +114,19 @@
       }
     }
   }
-
   .background {
     display: none;
   }
 
   .desktop {
-    width: 40%;
     position: absolute;
+    width: 30%;
   }
-}
 
-// == Desktop styles
-@media screen and (min-width: $desktop-styles) {
-  .footer {
-    margin: 2em 7em auto;
+  // == Desktop styles
+  @media screen and (min-width: $desktop-styles) {
+    .footer {
+      margin: 2em 7em auto;
+    }
   }
 }
